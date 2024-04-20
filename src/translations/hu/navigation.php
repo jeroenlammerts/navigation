@@ -1,72 +1,54 @@
 <?php
+
 return [
-    // vendor/verbb/navigation/src/controllers/NavsController.php
-    'Navigation saved.' => 'Navigáció elmentve.',
-
-    // vendor/verbb/navigation/src/controllers/NodesController.php
-    'No node with the ID “{id}”' => 'Nincs “{id}” ID-val rendelkező menüpont.',
-
-    // vendor/verbb/navigation/src/elements/Node.php
-    'Navigation Node' => 'Menüpont',
-
-    // vendor/verbb/navigation/src/services/Elements.php
-    'Entries' => 'Bejegyzések',
-    'Add an entry' => 'Bejegyzés hozzáadása',
-    'Categories' => 'Kategóriák',
-    'Add a category' => 'Kategória hozzáadása',
-    'Assets' => 'Média',
-    'Add an asset' => 'Média hozzáadása',
-    'Products' => 'Termékek',
-    'Add a product' => 'Termék hozzáadása',
-
-    // vendor/verbb/navigation/src/templates/navs/_build.html
-    'Parent' => 'Szülő',
-    'Select a navigation item as the parent.' => 'Válaszd ki, melyik menüpont legyen az elem szülője.',
-    'Open in new window' => 'Megnyitás új ablakban',
-    'Whether to open this navigation item in a new window.' => 'A menüpont új ablakban nyíljon-e meg.',
-    'Custom URL' => 'Egyedi URL',
-    'Title' => 'Cím',
-    'Name of this node in the navigation.' => 'A menüpont neve.',
-    'URL' => 'URL',
-    'The URL of this node.' => 'A menüpont URL-je.',
-    'Add' => 'Hozzáadás',
-    'There are no nodes yet.' => 'Még nincsenek menüpontok.',
-
-    // vendor/verbb/navigation/src/templates/navs/_edit.html
-    'Create a new navigation' => 'Új menü létrehozása',
-    'Name of this navigation in the CP.' => 'A menü neve az admin felületen.',
-    'Name of this navigation in the templates.' => 'A menü neve a sablonokban.',
-    'The maximum number of levels this navigation can have. Leave blank for no limit.' => 'Szintek maximális száma a menüben. Hagyd üresen, ha mindegy.',
-
-    // vendor/verbb/navigation/src/templates/navs/_editor.html:5
-    'The title for this navigation item.' => 'A menüpont címe.',
-    'Custom title' => 'Egyedi cím',
-    'Whether to set a custom title for this navigation item.' => 'Egyedi cím a menüponthoz.',
-    'Linked to' => 'Hivatkozás: ',
-    'The URL for this navigation item.' => 'A menüpont URL-je',
-    'Enabled' => 'Engedélyezve',
-    'Show or hide in navigation.' => 'A menüpont megjelenítése/elrejtése.',
-    'Whether this node should be hidden on just this site.' => 'A menüpont megjelenítése/elrejtése csak ezen az oldalon.',
-    'Classes' => 'Osztályok',
-    'Additional CSS classes for this navigation item.' => 'További CSS osztályok ehhez a menüponthoz.',
-
-    // vendor/verbb/navigation/src/templates/navs/index.html
-    'New navigation' => 'Új menü',
-    'No navigations exist yet.' => 'Még nincsenek menük.',
-    'Reorder' => 'Átrendezés',
-
-    // vendor/verbb/navigation/src/templates/settings.html
-    'Plugin name for the end user.' => 'A felhasználónak megjelenő beépülő modul név.',
-
-    // vendor/verbb/navigation/src/services/Navs.php
-    'No navigation exists with the ID “{id}”.' => 'Nincs “{id}” ID-val rendelkező menü.',
-
-    // Crumbs label - global
-    'Navigations' => 'Menük',
-
-    // vendor/verbb/navigation/src/resources/src/js/navigation.js
-    'Node added.' => 'Menüpont hozzáadva.',
-    'Node deleted.' => 'Menüpont törölve.',
-    'Node updated.' => 'Menüpont frissítve',
-    'Are you sure you want to delete “{title}” and its descendants?' => 'Biztosan törölni szeretnéd “{title}” menüpontot és minden gyermekét?',
+  'Add a Category' => 'Add a Category',
+  'Add an Asset' => 'Add an Asset',
+  'Add an Entry' => 'Add an Entry',
+  'Add a Product' => 'Add a Product',
+  'Add a {name}' => 'Add a {name}',
+  'Additional attributes for this node.' => 'Additional attributes for this node.',
+  'Additional content appended to the element‘s URL.' => 'Additional content appended to the element‘s URL.',
+  'Additional CSS classes for this navigation item.' => 'További CSS osztályok ehhez a menüponthoz.',
+  'Add {name}' => 'Add {name}',
+  'Attribute' => 'Attribute',
+  'Classes' => 'Osztályok',
+  'Couldn’t add node.' => 'Couldn’t add node.',
+  'Create navigations' => 'Create navigations',
+  'Custom Attributes' => 'Custom Attributes',
+  'Custom URL' => 'Egyedi URL',
+  'Delete navigation' => 'Delete navigation',
+  'Edit' => 'Edit',
+  'Edit navigation settings' => 'Edit navigation settings',
+  'Edit Nodes' => 'Edit Nodes',
+  'Element ID is required.' => 'Element ID is required.',
+  'Exceeded maximum allowed nodes ({number}) for this nav.' => 'Exceeded maximum allowed nodes ({number}) for this nav.',
+  'Exceeded maximum allowed nodes for this level.' => 'Exceeded maximum allowed nodes for this level.',
+  'Linked Element ID is required.' => 'Linked Element ID is required.',
+  'Linked to {element}' => 'Linked to {element}',
+  'Manage “{type}”' => 'Manage “{type}”',
+  'Navigation' => 'Navigation',
+  'Navigation Options' => 'Navigation Options',
+  'Navigation saved.' => 'Navigáció elmentve.',
+  'New navigation' => 'Új menü',
+  'New Window' => 'New Window',
+  'Node' => 'Node',
+  'Nodes' => 'Nodes',
+  'Node Type' => 'Node Type',
+  'Node Type Fields' => 'Node Type Fields',
+  'Node{plural} added.' => 'Node{plural} added.',
+  'Passive' => 'Passive',
+  'Permissions' => 'Permissions',
+  'Select a navigation' => 'Select a navigation',
+  'Select which node types can be added when building your navigation.' => 'Select which node types can be added when building your navigation.',
+  'Settings' => 'Settings',
+  'Site' => 'Site',
+  'The element this node is linked to.' => 'The element this node is linked to.',
+  'Type' => 'Type',
+  'Unable to duplicate navigation.' => 'Unable to duplicate navigation.',
+  'Unable to save navigation.' => 'Unable to save navigation.',
+  'URL Suffix' => 'URL Suffix',
+  'Value' => 'Value',
+  'View all navigations' => 'View all navigations',
+  'View navigation - {nav}' => 'View navigation - {nav}',
+  'Whether to open this navigation item in a new window.' => 'A menüpont új ablakban nyíljon-e meg.',
 ];
