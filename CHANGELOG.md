@@ -1,26 +1,11 @@
 # Changelog
 
-## 3.0.0-beta.3 - 2024-04-12
-
-### Fixed
-- Fix an issue with Node elements not being correctly displayed in element indexes, outside of navigation-editing contexts.
-- Update Feed Me integration.
-
-## 3.0.0-beta.2 - 2024-03-06
-
-### Changed
-- Update site menu to use breadcrumb.
-
-### Fixed
-- Fix element action buttons not appearing when editing a node.
-- Fix lack of icons and edit button on node when editing navigation.
-- Fix toolbar when editing nodes.
-
-## 3.0.0-beta.1 - 2024-03-04
+## 3.0.0 - 2024-05-18
 
 ### Changed
 - Now requires PHP `8.2.0+`.
-- Now requires Craft `5.0.0-beta.1+`.
+- Now requires Craft `5.0.0+`.
+- Update site menu to use breadcrumb.
 
 ## 2.0.27 - 2024-03-18
 
