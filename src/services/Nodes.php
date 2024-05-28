@@ -63,6 +63,11 @@ class Nodes extends Component
             return;
         }
 
+        // Ignore any drafts
+        if ($element->getIsDraft()) {
+            return;
+        }
+
         $nodes = NodeElement::find()
             ->elementId($element->id)
             ->siteId($element->siteId)
