@@ -282,7 +282,6 @@ class Node extends Element
     public ?int $elementId = null;
     public ?int $siteId = null;
     public ?int $navId = null;
-    public bool $enabled = true;
     public ?string $type = null;
     public ?string $classes = null;
     public ?string $urlSuffix = null;

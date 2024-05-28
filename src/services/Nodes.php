@@ -105,9 +105,24 @@ class Nodes extends Component
                 $node->title = $element->title;
             }
 
-            // Only update URL if its changed
-            if ($currentElement && $currentElement->enabled === $node->enabled) {
-                $node->enabled = $element->enabled;
+            if ($currentElement) {
+                $isMultiSite = Craft::$app->getIsMultiSite() && count($node->getSupportedSites()) > 1;
+
+                // Sync the enabled status - if it's changed. Note that there's an inconsistency with reporting of a node is enabled for multi-site
+                $nodeEnabled = $isMultiSite ? $node->getEnabledForSite() : $node->enabled;
+                $elementEnabled = $isMultiSite ? $element->getEnabledForSite() : $element->enabled;
+                $currentElementEnabled = $isMultiSite ? $currentElement->getEnabledForSite() : $currentElement->enabled;
+
+                // Is the status different between the element and the node?
+                if ($elementEnabled !== $currentElementEnabled && $elementEnabled !== $nodeEnabled) {
+                    if ($isMultiSite) {
+                        $node->enabled = true;
+                        $node->setEnabledForSite($elementEnabled);
+                    } else {
+                        $node->enabled = $elementEnabled;
+                        $node->setEnabledForSite(true);
+                    }
+                }
             }
 
             $node->elementSiteId = $element->siteId;
