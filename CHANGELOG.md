@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.28 - 2024-06-16
+
+### Changed
+- Update non-English translations.
+- Update English translations.
+- Element-based nodes now have their status synced to the linked-to element.
+
+### Fixed
+- Fix case sensitivity checks for active state of nodes.
+- Fix node-update checks for element nodes checking against drafts.
+
 ## 2.0.27 - 2024-03-18
 
 ### Fixed
