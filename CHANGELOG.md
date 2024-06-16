@@ -1,5 +1,17 @@
 # Changelog
 
+## 3.0.1 - 2024-06-16
+
+### Changed
+- Update non-English translations.
+- Update English translations.
+- Element-based nodes now have their status synced to the linked-to element.
+
+### Fixed
+- Fix case sensitivity checks for active state of nodes.
+- Fix node-update checks for element nodes checking against drafts.
+- Fix Craft Team support.
+
 ## 3.0.0 - 2024-05-18
 
 ### Changed
