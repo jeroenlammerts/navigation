@@ -983,6 +983,10 @@ class Node extends Element
         // Remove the query string from the URL - not needed to compare
         $currentUrl = preg_replace('/\?.*/', '', $currentUrl);
 
+        // Compare things in lowercase, just in case
+        $currentUrl = strtolower($currentUrl);
+        $nodeUrl = strtolower($nodeUrl);
+
         // Is this a paginated request? If non-query string pagination, then cleanup currentUrl
         if (!str_starts_with($pageTrigger, '?')) {
             // Match against the entire path string as opposed to just the last segment so that we can support
