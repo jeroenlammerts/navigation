@@ -61,7 +61,7 @@ class NodeTypeElements extends BaseField
                 'instructions' => Craft::t('navigation', 'The element this node is linked to.'),
                 'id' => 'linkedElementId',
                 'name' => 'linkedElementId',
-                'elements' => [$element->getElement()],
+                'elements' => $element->getElement() ? [$element->getElement()] : [],
                 'elementType' => $element->type,
                 'sources' => $sources,
                 'showSiteMenu' => true,
