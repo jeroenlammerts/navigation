@@ -9,9 +9,9 @@ class NodeCondition extends ElementCondition
     // Protected Methods
     // =========================================================================
     
-    protected function conditionRuleTypes(): array
+    protected function selectableConditionRules(): array
     {
-        return array_merge(parent::conditionRuleTypes(), [
+        return array_merge(parent::selectableConditionRules(), [
             LevelConditionRule::class,
             TypeConditionRule::class,
         ]);
