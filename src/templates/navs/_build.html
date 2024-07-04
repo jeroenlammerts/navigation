@@ -8,7 +8,7 @@
     { label: 'Navigations' | t('navigation'), url: url('navigation/navs') },
 ] %}
 
-{% if craft.app.getIsMultiSite() %}
+{% if craft.app.getIsMultiSite() and requestedSite %}
     {% set crumbs = crumbs | unshift({
         id: 'site-crumb',
         icon: 'world',
