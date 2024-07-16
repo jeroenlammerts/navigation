@@ -183,7 +183,7 @@ class Nav extends Model
         );
     }
 
-    public function isOverMaxNodes($node): bool
+    public function isOverMaxNodes(Node $node): bool
     {
         if ($this->maxNodes) {
             $nodesService = Navigation::$plugin->getNodes();
@@ -200,7 +200,7 @@ class Nav extends Model
         return false;
     }
 
-    public function isOverMaxLevel($node): bool
+    public function isOverMaxLevel(Node $node): bool
     {
         if ($this->maxNodesSettings) {
             foreach ($this->maxNodesSettings as $maxNodesSetting) {
