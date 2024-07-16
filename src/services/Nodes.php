@@ -154,6 +154,10 @@ class Nodes extends Component
 
         $nav = $event->element->getNav();
 
+        // The element we've moving won't have its destination level set yet, 
+        // so use the target element (where we're moving to) to deduce that.
+        $event->element->level = $event->getTargetElement()->level ?? $event->element->level;
+
         if ($nav->maxNodesSettings) {
             Navigation::$plugin->getNodes()->setTempNodes([$event->element]);
 
