@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.3 - 2024-07-21
+
+### Fixed
+- Fix an error when moving nodes between levels with level-limits set.
+- Fix an error when adding multiple nodes when scrolled out of bounds.
+
 ## 3.0.2 - 2024-07-10
 
 ### Fixed
