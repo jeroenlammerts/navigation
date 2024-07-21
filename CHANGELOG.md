@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 - 2024-07-21
+
+### Changed
+- Now requires Craft 4.5.0+.
+
+### Fixed
+- Fix an error when moving nodes between levels with level-limits set.
+
 ## 2.0.28 - 2024-06-16
 
 ### Changed
