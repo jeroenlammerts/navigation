@@ -11,6 +11,8 @@ use craft\events\MoveElementEvent;
 use craft\helpers\ArrayHelper;
 use craft\helpers\ElementHelper;
 
+use yii\base\UserException;
+
 class Nodes extends Component
 {
     // Properties
@@ -162,7 +164,7 @@ class Nodes extends Component
             Navigation::$plugin->getNodes()->setTempNodes([$event->element]);
 
             if ($nav->isOverMaxLevel($event->element)) {
-                $event->isValid = false;
+                throw new UserException('Unable to move node due to the maximum nodes per level.');
             }
         }
     }
