@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.1 - 2024-09-07
+
+### Changed
+- Improve validation message when maximum nodes per level is set (for Craft 4.11+ and 5.3+).
+
 ## 2.1.0 - 2024-07-21
 
 ### Changed
